@@ -112,6 +112,11 @@
 .cv-btn-icon {
   width: 3.6rem;
   height: 3.6rem;
+  transition: all 0.3s linear;
+}
+
+.btn:active .cv-btn-icon {
+  color: #236f21;
 }
 
 .hero {

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="This is Antonis Sykoutris personal portfolio page, it contains the cv,skills,services,education,experiance,personal projects and contact information"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="img/logo/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" href="img/logo/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="js/script.js"></script>
+    <title>Portfolio &mdash; Antonis Sykoutris</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#"><img class="logo" src="img/logo/Asset 3.png" alt="logo" /></a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero" id="hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Hello I'm Antonis Sykoutris</h1>
+            <p class="hero-description">
+              I’m a web developer located in Greece. I have a passion for programming and in particular for web and game
+              development. I am a well-organized individual, problem solver, and independent employee but also able to
+              function as part of a team with a keen eye for details. I work to make fast, easy-to-use, and responsive
+              websites that are built with best practices.
+            </p>
+            <button class="btn cv-btn">
+              <span class="btn-flex">
+                <span class="cv-btn-text"> Download CV </span>
+                <ion-icon class="cv-btn-icon" name="download-outline"></ion-icon>
+              </span>
+            </button>
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <source srcset="img/illustrations/hero.webp" media="screen" />
+              <source srcset="img/illustrations/hero.svg" media="screen" />
+              <img class="hero-img" src="img/illustrations/hero.svg" alt="Woman enjoying life" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="section-skills">
+        <div class="container">
+          <h2 class="heading-skills">Skills</h2>
+          <div class="logos">
+            <div class="logos-skill grow grow:hover">
+              <img src="img/skills/logo-html5.svg" alt="html5" />
+              <span>HTML5</span>
+            </div>
+            <div class="logos-skill grow grow:hover">
+              <img src="img/skills/logo-css3.svg" alt="css3" />
+              <span>CSS</span>
+            </div>
+            <div class="logos-skill grow grow:hover">
+              <img src="img/skills/logo-sass.svg" alt="sass" />
+              <span>Sass</span>
+            </div>
+            <div class="logos-skill grow grow:hover">
+              <img src="img/skills/logo-javascript.svg" alt="javascript" />
+              <span>JavaScript</span>
+            </div>
+            <div class="logos-skill grow grow:hover">
+              <img src="img/skills/logo-react.svg" alt="react" />
+              <span>React</span>
+            </div>
+            <div class="logos-skill grow grow:hover">
+              <img src="img/skills/logo-nodejs.svg" alt="node.js" />
+              <span>Node.js</span>
+            </div>
+            <div class="logos-skill grow grow:hover">
+              <img src="img/skills/logo-laravel.svg" alt="laravel" />
+              <span>Laravel</span>
+            </div>
+            <div class="logos-skill grow grow:hover">
+              <img src="img/skills/logo-c.svg" alt="c#" />
+              <span>C#</span>
+            </div>
+            <div class="logos-skill grow grow:hover">
+              <img src="img/skills/logo-python.svg" alt="python" />
+              <span>Python</span>
+            </div>
+            <div class="logos-skill grow grow:hover">
+              <img src="img/skills/logo-mysql.svg" alt="mysql" />
+              <span>MySQL</span>
+            </div>
+            <div class="logos-skill grow grow:hover">
+              <img src="img/skills/logo-firebase.svg" alt="firebase" />
+              <span>Firebase</span>
+            </div>
+            <div class="logos-skill grow grow:hover">
+              <img src="img/skills/logo-github.svg" alt="github" />
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-services" id="services">
+        <div class="container">
+          <span class="subheading">&lt;services&gt;</span>
+          <h2 class="heading-secondary">Services that I can provide</h2>
+        </div>
+        <div class="container grid grid--2-cols services">
+          <div class="service">
+            <ion-icon class="service-icon" name="desktop-outline"></ion-icon>
+            <p class="service-title">Web Development</p>
+            <p class="service-text">
+              I use various web technologies to develop fast, easy-to-use, reliable, creative, and responsive websites.
+            </p>
+          </div>
+
+          <div class="service">
+            <ion-icon class="service-icon" name="game-controller-outline"></ion-icon>
+            <p class="service-title">Game Development</p>
+            <p class="service-text">
+              I utilize top-notch game engines like Unity and Unreal to produce an immersive video game experience.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <span class="subheading margin-bottom-reset margin-top-sm">&lt;/services&gt;</span>
+        </div>
+      </section>
+      <section class="section-education" id="education">
+        <div class="container">
+          <span class="subheading">&lt;education&gt;</span>
+          <h2 class="heading-secondary center-text">Education</h2>
+        </div>
+        <div class="container">
+          <div class="education-item education-primary">
+            <ion-icon class="education-icon" name="ribbon-outline"></ion-icon>
+            <div class="education-details">
+              <a class="link education-title" href="#!">Computer Science Department</a>
+              <p class="education-text">From Sep 2016 - Jul 2022</p>
+            </div>
+          </div>
+          <div class="grid grid--4-cols grid-row-gap-mm education-items">
+            <div class="education-item center-grid-items">
+              <ion-icon class="course-icon" name="code-working-outline"></ion-icon>
+              <div class="course-details">
+                <a class="link course-title" href="#!">HTML5 & CSS course</a>
+                <p class="course-text">Jul 2022</p>
+              </div>
+            </div>
+            <div class="education-item center-grid-items">
+              <ion-icon class="course-icon" name="code-working-outline"></ion-icon>
+              <div class="course-details">
+                <a class="link course-title" href="#!">Sass course</a>
+                <p class="course-text">Jul 2022</p>
+              </div>
+            </div>
+            <div class="education-item center-grid-items">
+              <ion-icon class="course-icon" name="code-working-outline"></ion-icon>
+              <div class="course-details">
+                <a class="link course-title" href="#!">JavaScript course</a>
+                <p class="course-text">Jul 2022</p>
+              </div>
+            </div>
+            <div class="education-item center-grid-items">
+              <ion-icon class="course-icon" name="code-working-outline"></ion-icon>
+              <div class="course-details">
+                <a class="link course-title" href="#!">React course</a>
+                <p class="course-text">Jul 2022</p>
+              </div>
+            </div>
+            <div class="education-item center-grid-items">
+              <ion-icon class="course-icon" name="code-working-outline"></ion-icon>
+              <div class="course-details">
+                <a class="link course-title" href="#!">Node.js course</a>
+                <p class="course-text">Jul 2022</p>
+              </div>
+            </div>
+            <div class="education-item center-grid-items">
+              <ion-icon class="course-icon" name="code-working-outline"></ion-icon>
+              <div class="course-details">
+                <a class="link course-title" href="#!">C# course</a>
+                <p class="course-text">Jul 2022</p>
+              </div>
+            </div>
+            <div class="education-item center-grid-items">
+              <ion-icon class="course-icon" name="code-working-outline"></ion-icon>
+              <div class="course-details">
+                <a class="link course-title" href="#!">Python course</a>
+                <p class="course-text">Jul 2022</p>
+              </div>
+            </div>
+            <div class="education-item center-grid-items">
+              <ion-icon class="course-icon" name="code-working-outline"></ion-icon>
+              <div class="course-details">
+                <a class="link course-title" href="#!">GitHub course</a>
+                <p class="course-text">Jul 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <span class="subheading margin-bottom-reset margin-top-mm">&lt;/education&gt;</span>
+        </div>
+      </section>
+      <section class="section-experience" id="experience">
+        <div class="container">
+          <span class="subheading">&lt;experience&gt;</span>
+          <h2 class="heading-secondary">My experiance</h2>
+        </div>
+        <div class="container grid grid--2-cols experiences">
+          <div class="experience">
+            <ion-icon class="experience-icon" name="business-outline"></ion-icon>
+            <div class="experience-details">
+              <p class="experience-title">SOFTWARE COMPANY(Θ. ΚΟΥΤΣΟΥΡΑΣ Ε.Ε)</p>
+              <p class="experience-text">From Jan 2021 - Mar 2021</p>
+            </div>
+            <p class="experience-text">
+              I worked as a front-end developer & provided data-entry services in order to create a webapp called
+              <a class="link experience-link" href="https://en.ahi-carrier.gr/" target="_blank">AHI Carrier</a>
+              .
+            </p>
+          </div>
+
+          <div class="experience">
+            <ion-icon class="experience-icon" name="business-outline"></ion-icon>
+            <div class="experience-details">
+              <p class="experience-title">FOUNDATION FOR RESEARCH AND TECHNOLOGY</p>
+              <p class="experience-text">From Mar 2022 - Jul 2022</p>
+            </div>
+            <p class="experience-text">
+              I worked as a UI/UX designer & front-end developer in order to create a medical webapp called
+              <a class="link experience-link" href="https://ecare-pcp.eu/suppliers/forth/" target="_blank">eCare</a>
+              .
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <span class="subheading margin-bottom-reset margin-top-sm">&lt;/experience&gt;</span>
+        </div>
+      </section>
+      <section class="section-projects" id="projects">
+        <div class="container">
+          <span class="subheading">&lt;projects&gt;</span>
+          <h2 class="heading-secondary center-text margin-bottom-sm">Projects</h2>
+        </div>
+        <div class="container project-categories">
+          <button class="project-category">ALL</button>
+          <button class="project-category">WEB DEVELOPMENT</button>
+          <button class="project-category">GAME DEVELOPMENT</button>
+        </div>
+        <div class="container grid grid--3-cols projects">
+          <div class="project">
+            <div class="project-info">
+              <div class="project-head">
+                <h3 class="project-title">Title</h3>
+                <ul class="project-icons">
+                  <li>
+                    <a class="project-code" href="https://github.com/" target="_blank">
+                      <ion-icon class="project-icon" name="logo-github"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="project-live" href="https://github.com/" target="_blank">
+                      <ion-icon class="project-icon" name="open-outline"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, asperiores
+              </p>
+              <div class="grid grid--3-cols grid-column-gap-sm grid-row-gap-sm">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">Sass</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-info">
+              <div class="project-head">
+                <h3 class="project-title">Title</h3>
+                <ul class="project-icons">
+                  <li>
+                    <a class="project-code" href="https://github.com/" target="_blank">
+                      <ion-icon class="project-icon" name="logo-github"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="project-live" href="https://github.com/" target="_blank">
+                      <ion-icon class="project-icon" name="open-outline"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, asperiores
+              </p>
+              <div class="grid grid--3-cols grid-column-gap-sm grid-row-gap-sm">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">Sass</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-info">
+              <div class="project-head">
+                <h3 class="project-title">Title</h3>
+                <ul class="project-icons">
+                  <li>
+                    <a class="project-code" href="https://github.com/" target="_blank">
+                      <ion-icon class="project-icon" name="logo-github"></ion-icon>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="project-live" href="https://github.com/" target="_blank">
+                      <ion-icon class="project-icon" name="open-outline"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, asperiores
+              </p>
+              <div class="grid grid--3-cols grid-column-gap-sm grid-row-gap-sm">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">Sass</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <span class="subheading margin-bottom-reset margin-top-sm">&lt;/projects&gt;</span>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="container grid grid--3-cols footer-elements">
+        <div class="logo-col">
+          <a class="footer-logo" href="#"> <img class="logo" src="img/logo/favicon.ico" alt="logo" /></a>
+          <p class="copyright">
+            Copyright &copy; <span class="copyright-year">2022</span> by Antonis Sykoutris Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="contact-col">
+          <p class="footer-heading contact">Contact me</p>
+          <address class="email">
+            <ion-icon class="email-icon" name="mail-outline"></ion-icon>
+            <a class="email-text" href="mailto:antonis.sykoutris@protonmail.com">antonis.sykoutris@protonmail.com</a>
+          </address>
+        </div>
+        <div class="social-col">
+          <p class="footer-heading">Socials</p>
+          <ul class="social-links">
+            <li>
+              <a class="social-link" href="https://www.linkedin.com/" target="_blank"
+                ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="social-link" href="https://github.com/" target="_blank"
+                ><ion-icon class="social-icon" name="logo-github"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

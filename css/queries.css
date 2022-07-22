@@ -1,0 +1,342 @@
+/********************************/
+/* FOOTER QUERIES */
+/********************************/
+
+@media (hover: hover) and (pointer: fine) {
+  .email-text:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+/********************************/
+/* BELOW 1344px (Smalled Desktops) */
+/********************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .section-hero {
+    background-color: #fdf2e9;
+    padding: 4.8rem 0 12.8rem 0;
+  }
+
+  .heading-skills {
+    margin-bottom: 3.2rem;
+  }
+
+  .logos img {
+    width: 4.4rem;
+    height: 4.4rem;
+    /* opacity: 50%; */
+  }
+
+  .education-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/********************************/
+/* BELOW 1200px (Landscape Tablets) */
+/********************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .nav-list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+}
+
+/********************************/
+/* BELOW 944px (Tablets) */
+/********************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .logos img {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  .course-title:link,
+  .course-title:visited {
+    padding: 0 !important;
+  }
+
+  .course-title:hover,
+  .course-title:active {
+    box-shadow: inset 16rem 0 0 0 #cf711f;
+  }
+
+  .projects {
+    padding-left: 3.2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.6rem;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+    /* Hide navigation */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/********************************/
+/* BELOW 704px (Smaller Tablets) */
+/********************************/
+
+@media (max-width: 44em) {
+  .education-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .education-item {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .education-primary {
+    align-content: center !important;
+    justify-content: center !important;
+  }
+
+  .education-title:link,
+  .education-title:visited {
+    padding: 0 !important;
+  }
+
+  .education-title:hover,
+  .education-title:active {
+    box-shadow: inset 32rem 0 0 0 #cf711f !important;
+  }
+
+  .course-details {
+    width: 16rem;
+  }
+}
+
+/********************************/
+/* BELOW 560px (Phones) */
+/********************************/
+
+@media (max-width: 35em) {
+  .grid {
+    row-gap: 3.2rem;
+  }
+
+  .services,
+  .education-items,
+  .experiences,
+  .projects,
+  .footer-elements {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .education-items {
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+
+  .education-item {
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100%;
+    margin: 0 auto !important;
+  }
+
+  .education-primary {
+    align-content: center !important;
+    justify-content: center !important;
+    margin-bottom: 4.8rem !important;
+  }
+
+  .course-details {
+    width: 16rem;
+  }
+
+  .project {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .footer-logo {
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+    padding-right: 6rem;
+  }
+
+  .contact-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .contact {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/********************************/
+/* Fixing Safari flexbox gap */
+/********************************/
+
+.no-flexbox-gap .nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .logos li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .logos-skill li:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .education-item :not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .logo-col :not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .email :not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}

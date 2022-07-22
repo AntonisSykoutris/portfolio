@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 291" width="256" height="291">
+	<title>c--4-svg</title>
+	<defs>
+		<image  width="55" height="55" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA3BAMAAABa9c91AAAAAXNSR0IB2cksfwAAACFQTFRF////////////////////////////////////////////f4DHbwAAAAt0Uk5TAL//QH/cgZ/joQZtlerPAAAAb0lEQVR4nGNggABBQUEBdBYcCCkpKaCzRiUplDSGAKCQMjrLgMFICSdwGHySJi5gAPRAWBoYFCkpqUDEHJACoQHCmoQ1hEYlKZLsWgUGyJKDLpnglTQUBAOgVxTRWQ5I/lRAZzGMStJeElwmobEYAHx5clkJ4eeQAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		.s0 { fill: #000000 } 
+		.s1 { fill: #ffffff } 
+	</style>
+	<path id="Layer" class="s0" d="m255.6 204.8q0 7.1-3 12.5c-2.1 3.7-5.2 6.8-9.4 9.3-34 19.6-68.1 39.1-102.1 58.8-9.2 5.3-18.1 5.1-27.2-0.3-13.5-8-81.3-46.8-101.5-58.5-4.2-2.5-7.4-5.6-9.4-9.3q-3-5.4-3-12.5 0-59.2 0-118.4c0-9.5 4.1-16.9 12.4-21.7 20.2-11.7 88-50.6 101.5-58.6 9.1-5.3 18-5.5 27.2-0.2 34 19.6 68.1 39.2 102.1 58.8q6.2 3.6 9.2 9 3.2 5.5 3.2 12.8c0 39.4 0 118.3 0 118.3z"/>
+	<g id="Layer">
+		<use id="Layer" href="#img1" x="181" y="118"/>
+		<path id="Layer" class="s1" d="m128.5 50.6c35.1 0 65.8 19.1 82.2 47.5l-0.1-0.3-41.4 23.8c-8.1-13.8-23.1-23.1-40.2-23.3h-0.5c-26.2 0-47.3 21.2-47.3 47.3q-0.1 3.1 0.3 6.1 0.4 3.1 1.2 6.1 0.8 2.9 2 5.8 1.2 2.8 2.7 5.5c8.1 14.2 23.5 23.8 41.1 23.8 17.7 0 33.1-9.7 41.2-24.1l-0.2 0.4 41.3 23.9c-16.3 28.1-46.5 47.1-81.3 47.5h-1c-35.3 0-66.1-19.2-82.5-47.7-8-13.9-12.5-30.1-12.5-47.3 0-52.4 42.5-95 95-95z"/>
+	</g>
+</svg>

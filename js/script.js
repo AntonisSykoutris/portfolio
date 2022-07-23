@@ -1,12 +1,34 @@
 "use strict";
 
 ///////////////////////////////////////////////////////////
+// Reusable variables and functions
+const header = document.querySelector(".header");
+
+const toggleScroll = () => {
+  if (header.classList.contains("nav-open")) {
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+  }
+
+  if (!header.classList.contains("nav-open")) {
+    document.documentElement.style.overflow = "visible";
+    document.documentElement.style.height = "auto";
+    document.body.style.overflow = "visible";
+    document.body.style.height = "auto";
+  }
+};
+
+///////////////////////////////////////////////////////////
 // Make mobile navigation work
 const mobileNavigation = () => {
   const menu = document.querySelector(".btn-mobile-nav");
-  const header = document.querySelector(".header");
+
   const setMenu = () => header.classList.toggle("nav-open");
-  menu.addEventListener("click", setMenu);
+
+  menu.addEventListener("click", () => {
+    setMenu();
+    toggleScroll();
+  });
 };
 mobileNavigation();
 
@@ -31,7 +53,6 @@ document.body.addEventListener("click", e => {
     e.preventDefault();
 
     const href = e.target.getAttribute("href");
-    const headerEl = document.querySelector(".header");
 
     // For The logo because it is an image and doesnt have href
     if (!href) {
@@ -54,7 +75,11 @@ document.body.addEventListener("click", e => {
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
     if (e.target.classList.contains("nav-link")) {
-      headerEl.classList.toggle("nav-open");
+      header.classList.toggle("nav-open");
+      document.documentElement.style.overflow = "visible";
+      document.documentElement.style.height = "auto";
+      document.body.style.overflow = "visible";
+      document.body.style.height = "auto";
     }
   }
 });
@@ -101,6 +126,24 @@ const checkFlexGap = () => {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 };
 checkFlexGap();
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 

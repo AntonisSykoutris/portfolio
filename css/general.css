@@ -126,6 +126,12 @@ body.no-webp .project {
   margin-bottom: 1.6rem;
 }
 
+.btn-hidden {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+
 /* HELPER/SETTINGS CLASSES */
 
 .margin-right-sm {
@@ -186,4 +192,20 @@ body.no-webp .project {
 }
 .grow:hover {
   transform: scale(1.2);
+}
+
+/********************************/
+/* GENERAL REUSEABLE ANIMATIONS */
+/********************************/
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }

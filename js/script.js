@@ -127,6 +127,8 @@ const checkFlexGap = () => {
 };
 checkFlexGap();
 
+// Initialize reveal animation on divs having the reaveal class
+
 function reveal() {
   const reveals = document.querySelectorAll(".reveal");
   reveals.forEach((el, i) => {
@@ -139,6 +141,10 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+// Initialize jello animation when cv-btn is clicked
+// const btn = document.querySelector(".cv-btn");
+// btn.addEventListener("click", () => btn.classList.toggle("jello-horizontal"));
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 

@@ -198,6 +198,7 @@ body.no-webp .project {
 /* GENERAL REUSEABLE ANIMATIONS */
 /********************************/
 
+/* ANIMATION REVEAL CONTAINER */
 .reveal {
   position: relative;
   transform: translateY(150px);

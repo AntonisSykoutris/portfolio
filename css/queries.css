@@ -213,12 +213,6 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .btn,
-  .btn:link,
-  .btn:visited {
-    padding: 2.4rem 1.6rem;
-  }
-
   .section-hero {
     padding: 2.4rem 0 6.4rem 0;
   }

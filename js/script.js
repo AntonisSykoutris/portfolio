@@ -129,11 +129,10 @@ checkFlexGap();
 
 function reveal() {
   const reveals = document.querySelectorAll(".reveal");
-  reveal.forEach((el, i) => {
+  reveals.forEach((el, i) => {
     const windowHeight = window.innerHeight;
     const elementTop = reveals[i].getBoundingClientRect().top;
     const elementVisible = 150;
-
     if (elementTop < windowHeight - elementVisible) reveals[i].classList.add("active");
     if (elementTop >= windowHeight - elementVisible) reveals[i].classList.remove("active");
   });

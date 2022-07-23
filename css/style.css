@@ -93,44 +93,52 @@
   margin-top: 9.6rem;
 }
 
-.button {
-  border-radius: 0.9rem;
-  background-color: #f4511e;
-  border: none;
-  color: #ffffff;
-  text-align: center;
-  font-size: 2rem;
-  padding: 2rem;
-  width: 20rem;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 0.5rem;
-}
-
-.button span {
-  cursor: pointer;
+.btn,
+.btn:link,
+.btn:visited {
   display: inline-block;
-  position: relative;
-  transition: 0.5s;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
 }
 
-.button span:after {
-  font-family: FontAwesome;
-  content: "\f019";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -2rem;
-  transition: 0.5s;
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
 }
 
-.button:hover span {
-  padding-right: 2.5rem;
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
 }
 
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+
+  /* border: 3px solid #fff; */
+
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
 }
 
 .hero {

@@ -27,5 +27,4 @@ Once the website was finished and it was ready for deployment I hosted it using 
 
 I used Google Lighthouse, an open-source, automated tool for measuring the quality of web pages.
 
-![App Screenshot](https://drive.google.com/uc?export=view&id=1SgX0MNwsfpPXnukd8w9Ky6WSnelY_95j)
-
+![image](https://github.com/AntonisSykoutris/portfolio/blob/main/img/screenshots/google-gighthouse.png)

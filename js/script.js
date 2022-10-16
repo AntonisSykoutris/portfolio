@@ -107,7 +107,7 @@ const stickyNavigation = () => {
   );
   obs.observe(sectionHeroEl);
 };
-//stickyNavigation();
+stickyNavigation();
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 const checkFlexGap = () => {

@@ -72,6 +72,11 @@
 @media (max-width: 59em) {
   html {
     font-size: 50%;
+    overflow-x: hidden !important;
+  }
+
+   body {
+    overflow-x: hidden !important;
   }
 
   .hero {

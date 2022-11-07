@@ -61,7 +61,7 @@
   color: #333;
 }
 
-.icon-mobile-nav[name="close-outline"] {
+.icon-mobile-nav[name='close-outline'] {
   display: none;
 }
 
@@ -424,6 +424,16 @@
   position: relative;
 }
 
+.project--roomi {
+  max-width: 34.9rem;
+  height: 30rem;
+  border-radius: 0.9rem;
+  background-image: url(/portfolio/img/project/project-roomi.webp);
+  background-size: cover;
+  padding: 1.6rem;
+  position: relative;
+}
+
 .project-info {
   position: absolute;
   top: 0;
@@ -580,7 +590,7 @@
 }
 
 .email-text::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   right: 0;

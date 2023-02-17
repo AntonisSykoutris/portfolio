@@ -292,6 +292,18 @@
 }
 
 /********************************/
+/*  372px (S21 FE) */
+/********************************/
+
+@media (max-width: 23.25em) {
+  .btn--full {
+    margin-right: 0 !important;
+    margin-bottom: 1.2rem !important;
+  }
+}
+
+
+/********************************/
 /* Fixing Safari flexbox gap */
 /********************************/
 

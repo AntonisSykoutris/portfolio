@@ -1,31 +1,31 @@
-"use strict";
+'use strict';
 
 ///////////////////////////////////////////////////////////
 // Reusable variables and functions
-const header = document.querySelector(".header");
+const header = document.querySelector('.header');
 
 const toggleScroll = () => {
-  if (header.classList.contains("nav-open")) {
-    document.documentElement.style.overflow = "hidden";
-    document.body.style.overflow = "hidden";
+  if (header.classList.contains('nav-open')) {
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
   }
 
-  if (!header.classList.contains("nav-open")) {
-    document.documentElement.style.overflow = "visible";
-    document.documentElement.style.height = "auto";
-    document.body.style.overflow = "visible";
-    document.body.style.height = "auto";
+  if (!header.classList.contains('nav-open')) {
+    document.documentElement.style.overflow = 'visible';
+    document.documentElement.style.height = 'auto';
+    document.body.style.overflow = 'visible';
+    document.body.style.height = 'auto';
   }
 };
 
 ///////////////////////////////////////////////////////////
 // Make mobile navigation work
 const mobileNavigation = () => {
-  const menu = document.querySelector(".btn-mobile-nav");
+  const menu = document.querySelector('.btn-mobile-nav');
 
-  const setMenu = () => header.classList.toggle("nav-open");
+  const setMenu = () => header.classList.toggle('nav-open');
 
-  menu.addEventListener("click", () => {
+  menu.addEventListener('click', () => {
     setMenu();
     toggleScroll();
   });
@@ -35,7 +35,7 @@ mobileNavigation();
 ///////////////////////////////////////////////////////////
 // Make copyright year the current year
 const copyrightYear = () => {
-  const copyright = document.querySelector(".copyright-year");
+  const copyright = document.querySelector('.copyright-year');
   const curYear = new Date().getFullYear();
   copyright.textContent = curYear;
 };
@@ -44,42 +44,42 @@ copyrightYear();
 ///////////////////////////////////////////////////////////
 //Smooth scrolling animation
 
-document.body.addEventListener("click", e => {
-  if (e.target.classList.contains("link")) return true;
+document.body.addEventListener('click', e => {
+  if (e.target.classList.contains('link')) return true;
   if (
-    (e.target.hasAttribute("href") || e.target.classList.contains("logo")) &&
-    !e.target.classList.contains("email-text")
+    (e.target.hasAttribute('href') || e.target.classList.contains('logo')) &&
+    !e.target.classList.contains('email-text')
   ) {
     e.preventDefault();
 
-    const href = e.target.getAttribute("href");
+    const href = e.target.getAttribute('href');
 
     // For The logo because it is an image and doesnt have href
     if (!href) {
       window.scrollTo({
         top: 0,
-        behavior: "smooth",
+        behavior: 'smooth',
       });
       return;
     }
 
-    if (href === "#") {
+    if (href === '#') {
       window.scrollTo({
         top: 0,
-        behavior: "smooth",
+        behavior: 'smooth',
       });
     }
 
-    if (href.startsWith("#") && href.length > 1) {
+    if (href.startsWith('#') && href.length > 1) {
       const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
+      sectionEl.scrollIntoView({ behavior: 'smooth' });
     }
-    if (e.target.classList.contains("nav-link")) {
-      header.classList.toggle("nav-open");
-      document.documentElement.style.overflow = "visible";
-      document.documentElement.style.height = "auto";
-      document.body.style.overflow = "visible";
-      document.body.style.height = "auto";
+    if (e.target.classList.contains('nav-link')) {
+      header.classList.toggle('nav-open');
+      document.documentElement.style.overflow = 'visible';
+      document.documentElement.style.height = 'auto';
+      document.body.style.overflow = 'visible';
+      document.body.style.height = 'auto';
     }
   }
 });
@@ -88,21 +88,21 @@ document.body.addEventListener("click", e => {
 // Sticky navigation
 
 const stickyNavigation = () => {
-  const sectionHeroEl = document.querySelector(".section-hero");
+  const sectionHeroEl = document.querySelector('.section-hero');
   const obs = new IntersectionObserver(
     function (entries) {
       const ent = entries[0];
       // console.log(ent);
 
-      if (!ent.isIntersecting) document.body.classList.add("sticky");
+      if (!ent.isIntersecting) document.body.classList.add('sticky');
 
-      if (ent.isIntersecting) document.body.classList.remove("sticky");
+      if (ent.isIntersecting) document.body.classList.remove('sticky');
     },
     {
       // In the viewport
       root: null,
       threshold: 0,
-      rootMargin: "-80px" /* Manual margin for sticky nav(same as height of sticky 8rem = 80px) */,
+      rootMargin: '-80px' /* Manual margin for sticky nav(same as height of sticky 8rem = 80px) */,
     }
   );
   obs.observe(sectionHeroEl);
@@ -111,36 +111,36 @@ stickyNavigation();
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 const checkFlexGap = () => {
-  const flex = document.createElement("div");
-  flex.style.display = "flex";
-  flex.style.flexDirection = "column";
-  flex.style.rowGap = "1px";
+  const flex = document.createElement('div');
+  flex.style.display = 'flex';
+  flex.style.flexDirection = 'column';
+  flex.style.rowGap = '1px';
 
-  flex.appendChild(document.createElement("div"));
-  flex.appendChild(document.createElement("div"));
+  flex.appendChild(document.createElement('div'));
+  flex.appendChild(document.createElement('div'));
 
   document.body.appendChild(flex);
   const isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
 
-  if (!isSupported) document.body.classList.add("no-flexbox-gap");
+  if (!isSupported) document.body.classList.add('no-flexbox-gap');
 };
 checkFlexGap();
 
 // Initialize reveal animation on divs having the reaveal class
 
 function reveal() {
-  const reveals = document.querySelectorAll(".reveal");
+  const reveals = document.querySelectorAll('.reveal');
   reveals.forEach((el, i) => {
     const windowHeight = window.innerHeight;
     const elementTop = reveals[i].getBoundingClientRect().top;
     const elementVisible = 150;
-    if (elementTop < windowHeight - elementVisible) reveals[i].classList.add("active");
-    if (elementTop >= windowHeight - elementVisible) reveals[i].classList.remove("active");
+    if (elementTop < windowHeight - elementVisible) reveals[i].classList.add('active');
+    if (elementTop >= windowHeight - elementVisible) reveals[i].classList.remove('active');
   });
 }
 
-window.addEventListener("scroll", reveal);
+window.addEventListener('scroll', reveal);
 
 // Initialize jello animation when cv-btn is clicked
 // const btn = document.querySelector(".cv-btn");

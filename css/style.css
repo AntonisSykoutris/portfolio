@@ -424,6 +424,16 @@
   position: relative;
 }
 
+.project--userNexus {
+  max-width: 34.9rem;
+  height: 30rem;
+  border-radius: 0.9rem;
+  background-image: url(/portfolio/img/project/user-nexus.webp);
+  background-size: cover;
+  padding: 1.6rem;
+  position: relative;
+}
+
 .project--roomi {
   max-width: 34.9rem;
   height: 30rem;
